@@ -2,11 +2,12 @@
 
 Card::Card() {}
 
-Card::Card(string banco, int numeroPlastico, string varNIP)
+Card::Card(string banco, int numeroPlastico, string codigoSeguridad, string varNIP)
 {
     bank = banco;
     plasticNumber = numeroPlastico;
     NIP = varNIP;
+    securityCode = codigoSeguridad;
 }
 
 void Card::setBank(string banco){
@@ -26,4 +27,10 @@ int Card::getPlasticNumber(){
 }
 string Card::getNIP(){
     return NIP;
+}
+  void Card::setSecurityCode(string codigoSeguridad){
+    securityCode = codigoSeguridad;
+}
+string Card::getSecurityCode(){
+    return securityCode;
 }
