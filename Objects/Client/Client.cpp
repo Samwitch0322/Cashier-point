@@ -1,30 +1,30 @@
 #include "Client.hpp"
 
-Cliente::Cliente() {}
+Client::Client() {}
 
-Cliente::Cliente(string name, string varRFC,string addresses)
+Client::Client(string name, string varRFC,string addresses)
 {
     nombre = name;
     RFC = varRFC;
     domicilio = addresses;
 }
 
-void Cliente::setNombre(string name){
+void Client::setNombre(string name){
     nombre = name;
 }
-string Cliente::getNombre(){
+string Client::getNombre(){
     return nombre;
 }
-  void Cliente::setRFC(string varRFC){
+  void Client::setRFC(string varRFC){
     RFC = varRFC;
 }
-string Cliente::getRFC(){
+string Client::getRFC(){
     return RFC;
 }
-  void Cliente::setDomicilio(string addresses){
+  void Client::setDomicilio(string addresses){
     domicilio = addresses;
 }
-string Cliente::getDomicilio(){
+string Client::getDomicilio(){
     return domicilio;
 }
 

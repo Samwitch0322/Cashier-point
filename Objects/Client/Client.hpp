@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class Cliente 
+class Client 
 {
 	private: 
 		string nombre;
@@ -10,8 +10,8 @@ class Cliente
 		string domicilio;
         
     public:
-        Cliente();
-        Cliente(string name, string varRFC, string addresses);
+        Client();
+        Client(string name, string varRFC, string addresses);
 
         string getNombre();
         string getRFC();
@@ -21,4 +21,4 @@ class Cliente
         void setRFC(string varRFC);
         void setDomicilio(string addresses);
      
-}
+};
