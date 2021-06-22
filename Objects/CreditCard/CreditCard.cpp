@@ -2,7 +2,7 @@
 #include "CreditCard.hpp"
 
 
-CreditCard::CreditCard(float balanceCut, int creditLimit, string banco, int numeroPlastico,  string codigoSeguridad, string varNIP)
+CreditCard::CreditCard(float balanceCut, int creditLimit, string banco, int numeroPlastico,  string codigoSeguridad, string varNIP, Validity vigencia):Card(banco, numeroPlastico, codigoSeguridad, varNIP, vigencia)
 {
     balanceAlCorte = balanceCut;
     limiteCredito = creditLimit;

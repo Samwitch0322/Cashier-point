@@ -2,17 +2,18 @@
 
 using namespace std;
 
-class Card
-{
+class Card{
     private:
         string bank;
         int plasticNumber;
         string securityCode;
         string NIP;
+        
 
     public:
+        Validity validity; 
         Card();
-        Card(string banco, int numeroPlastico, string codigoSeguridad, string varNIP);
+        Card(string banco, int numeroPlastico, string codigoSeguridad, string varNIP, Validity vigencia);
 
         string getBank();
         int getPlasticNumber();
