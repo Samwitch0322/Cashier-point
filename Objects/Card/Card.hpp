@@ -1,4 +1,7 @@
+#ifndef CARD_HPP
+#define CARD_HPP
 #include<string>
+#include "../Validity/Validity.hpp"
 
 using namespace std;
 
@@ -25,5 +28,5 @@ class Card{
         void setPlasticNumber(int numeroPlastico);
         void setSecurityCode(string codigoSeguridad);
         void setNIP(string varNIP);
-
 };
+#endif

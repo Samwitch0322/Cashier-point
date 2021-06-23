@@ -1,4 +1,5 @@
-
+#ifndef VALIDITY_HPP
+#define VALIDITY_HPP
 #include<string>
 
 using namespace std;
@@ -19,3 +20,4 @@ class Validity{
         void setYear(int anio);
 
 }; 
+#endif

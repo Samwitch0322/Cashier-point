@@ -1,5 +1,8 @@
 #include<string>
+#ifndef CREDITCARD_HPP
+#define CREDITCARD_HPP
 #include"../Card/Card.hpp"
+#include"../Validity/Validity.hpp"
 
 using namespace std;
 
@@ -17,7 +20,5 @@ class CreditCard : public Card
         
         void setBalanceAlCorte(float balanceCut);
         void setLimiteCredito(int creditLimit);
-
-
-
 };
+#endif

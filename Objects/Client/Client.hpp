@@ -1,3 +1,5 @@
+#ifndef CLIENT_HPP
+#define CLIENT_HPP
 #include<string>
 
 using namespace std;
@@ -22,3 +24,4 @@ class Client
         void setDomicilio(string addresses);
      
 };
+#endif

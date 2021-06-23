@@ -1,4 +1,7 @@
+#ifndef BANKACCOUNT_HPP
+#define BANKACCOUNT_HPP
 #include<string>
+#include "../Client/Client.hpp"
 
 using namespace std;
 
@@ -24,3 +27,4 @@ class BankAccount
         void setBalance(float saldo);
         
 };
+#endif

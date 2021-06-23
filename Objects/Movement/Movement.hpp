@@ -1,16 +1,19 @@
+#ifndef MOVEMENT_HPP
+#define MOVEMENT_HPP
 #include<string>
+#include"../Client/Client.hpp"
 
 using namespace std;
 
-class Movements
+class Movement
 {
     private:
         string accountNumber;
         string date;
         Client cliente;
     public:
-        Movements();
-        Movements(string numeroCuenta, string fecha, Client cliente);
+        Movement();
+        Movement(string numeroCuenta, string fecha, Client cliente);
 
         string getAccountNumber();
         string getDate();
@@ -19,3 +22,4 @@ class Movements
         void setDate(string fecha);
         void setCliente(Client cliente);
 };
+#endif
