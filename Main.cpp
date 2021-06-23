@@ -14,6 +14,9 @@ int main (){
     Validity vigencia("03", 25);
     DebitCard tarjetaDebito("Santander", 5579, "880", "2203", vigencia);
            
+    //1. El **cliente**, utilizará su **tarjeta** para acceder, a través del **cajero**, al **sistema** de **movimientos**. 
+
+    
     cout<< tarjetaDebito.getBank() << endl;
     cout<< tarjetaDebito.validity.getMonth() <<endl;
 
