@@ -8,7 +8,7 @@ using namespace std;
 class Card{
     private:
         string bank;
-        int plasticNumber;
+        string plasticNumber;
         string securityCode;
         string NIP;
         
@@ -16,16 +16,16 @@ class Card{
     public:
         Validity validity; 
         Card();
-        Card(string banco, int numeroPlastico, string codigoSeguridad, string varNIP, Validity vigencia);
+        Card(string banco, string numeroPlastico, string codigoSeguridad, string varNIP, Validity vigencia);
 
         string getBank();
-        int getPlasticNumber();
+        string getPlasticNumber();
         string getSecurityCode();
         string getNIP();
         
         
         void setBank(string banco);
-        void setPlasticNumber(int numeroPlastico);
+        void setPlasticNumber(string numeroPlastico);
         void setSecurityCode(string codigoSeguridad);
         void setNIP(string varNIP);
 };

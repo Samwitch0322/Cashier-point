@@ -19,6 +19,7 @@ class Dr
         
         void setMovementType(string tipoMovimiento);
         void setAmount(float importe);
+      
        
 };
 #endif

@@ -8,15 +8,15 @@ using namespace std;
 class AccountAccess
 {
     private:
-    Client cliente;
-    string password;
+        Client client;
+        string password;
     public:
         AccountAccess();
         AccountAccess(Client cliente, string contrasenia);
         
-        Client getCliente();
+        Client getClient();
         string getPassword();
-        void setCliente(Client cliente);
+        void setClient(Client cliente);
         void setPassword(string contrasenia);
 
 };

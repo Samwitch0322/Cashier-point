@@ -13,7 +13,7 @@ class CreditCard : public Card
         int limiteCredito;
 
     public:
-        CreditCard(float balanceCut, int creditLimit, string banco, int numeroPlastico,  string codigoSeguridad, string varNIP, Validity vigencia);
+        CreditCard(float balanceCut, int creditLimit, string banco, string numeroPlastico,  string codigoSeguridad, string varNIP, Validity vigencia);
 
         float getBalanceAlCorte();
         int getlimiteCredito();

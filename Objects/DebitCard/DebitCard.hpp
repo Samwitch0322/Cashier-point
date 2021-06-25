@@ -8,8 +8,10 @@ using namespace std;
 
 class DebitCard : public Card
 {
+    private:
+    
     public:
-        DebitCard(string banco, int numeroPlastico,  string codigoSeguridad, string varNIP, Validity vigencia);
+        DebitCard(string banco, string numeroPlastico,  string codigoSeguridad, string varNIP, Validity vigencia);
 
 };
 #endif
