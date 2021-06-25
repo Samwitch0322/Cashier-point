@@ -8,7 +8,7 @@ using namespace std;
 class Withdrawal
 {
     private:
-        Client cliente;
+        Client client;
         string accountNumber;
         string date;
         float amount;
@@ -16,15 +16,16 @@ class Withdrawal
         
     public:
         Withdrawal();
+        Withdrawal(Client cliente, string numeroCuenta, string fecha, float importe);
         Withdrawal(Client cliente, string numeroCuenta, string fecha, float importe, float restaBalance);
 
-        Client getCliente();
+        Client getClient();
         string getAccountNumber();
         string getDate();
         float getAmount();
         float getSubtractBalance();
         
-        void setCliente(Client cliente);
+        void setClient(Client cliente);
         void setAccountNumber(string numeroCuenta);
         void setDate(string fecha);
         void setAmount(float importe);

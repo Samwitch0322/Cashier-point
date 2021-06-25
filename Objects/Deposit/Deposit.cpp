@@ -3,6 +3,7 @@
 Deposit::Deposit() {}
 Deposit::Deposit(Client cliente, string numeroCuenta, string fecha, float importe)
 {
+    client = cliente;
     accountNumber = numeroCuenta;
     date = fecha;
     amount = importe;
@@ -25,4 +26,11 @@ void Deposit::setAmount(float importe){
 }
 float Deposit::getAmount(){
     return amount;
+}
+
+void Deposit::setClient(Client cliente){
+    client = cliente;
+}
+Client Deposit::getClient(){
+    return client;
 }

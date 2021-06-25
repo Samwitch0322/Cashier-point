@@ -1,8 +1,17 @@
 #include"Withdrawal.hpp"
 
 Withdrawal::Withdrawal() {}
+Withdrawal::Withdrawal(Client cliente, string numeroCuenta, string fecha, float importe)
+{
+    client = cliente;
+    accountNumber = numeroCuenta;
+    date = fecha;
+    amount = importe;
+}
+
 Withdrawal::Withdrawal(Client cliente, string numeroCuenta, string fecha, float importe, float restaBalance)
 {
+    client = cliente;
     accountNumber = numeroCuenta;
     date = fecha;
     amount = importe;
@@ -32,4 +41,12 @@ void Withdrawal::setSubtractBalance(float restaBalance){
 }
 float Withdrawal::getSubtractBalance(){
     return subtractBalance;
+}
+
+
+void Withdrawal::setClient(Client cliente){
+    client = cliente;
+}
+Client Withdrawal::getClient(){
+    return client;
 }

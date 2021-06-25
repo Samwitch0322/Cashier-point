@@ -18,6 +18,8 @@ SystemBank::SystemBank(string varVersion){
 bool SystemBank::validateClient(AccountAccess newAccess){
     int validateRFC = false;
     int validatePass = false;
+
+    //Obtengo el numero de elemento en un arreglo de objetos
     int arrClientSize = sizeof(clients)/sizeof(clients[0]);
     int arrAccountsAccessSize = sizeof(accountsAccess)/sizeof(accountsAccess[0]);
 
@@ -45,7 +47,31 @@ bool SystemBank::validateClient(AccountAccess newAccess){
 
     return false;
 }
-void SystemBank::cashWithdrawal(){}
-void SystemBank::cashDeposit(){}
+
+// retiro De Efectivo
+float SystemBank::cashWithdrawal(AccountDebit accountDebit, Withdrawal withdrawal){
+    cout<<"Se retira: $"<<withdrawal.getAmount()<<endl;
+    cout<<"Saldo Anterior: $"<<accountDebit.getBalance()<<endl;
+    float balance = accountDebit.getBalance();
+    balance = balance - withdrawal.getAmount();
+    accountDebit.setBalance(balance);
+    cout<<"Saldo Actual: $"<<accountDebit.getBalance()<<endl;
+    return accountDebit.getBalance();
+}
+
+// deposito En Efectivo 
+float SystemBank::cashDeposit(AccountDebit accountDebit, Deposit deposit){
+    cout<<"Se depositan: $"<<deposit.getAmount()<<endl;
+    cout<<"Saldo Anterior: $"<<accountDebit.getBalance()<<endl;
+    float balance = accountDebit.getBalance();
+    balance = balance + deposit.getAmount();
+    accountDebit.setBalance(balance);
+    cout<<"Saldo Actual: $"<<accountDebit.getBalance()<<endl;
+    return accountDebit.getBalance();
+}
+
+//consulta De Saldo
 void SystemBank::balanceInquiry(){}
+        
+//consuta De Movimientos
 void SystemBank::queryMovement(){}

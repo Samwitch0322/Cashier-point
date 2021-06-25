@@ -8,7 +8,7 @@ using namespace std;
 class Deposit
 {
     private:
-        Client cliente;
+        Client client;
         string accountNumber;
         string date;
         float amount;
@@ -17,14 +17,15 @@ class Deposit
         Deposit();
         Deposit(Client cliente, string numeroCuenta, string fecha, float importe);
 
-        Client getCliente();
+        Client getClient();
         string getAccountNumber();
         string getDate();
         float getAmount();
         
-        void setCliente(Client cliente);
+        void setClient(Client cliente);
         void setAccountNumber(string numeroCuenta);
         void setDate(string fecha);
         void setAmount(float importe);
+
 };   
 #endif

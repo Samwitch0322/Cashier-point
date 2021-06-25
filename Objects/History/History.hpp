@@ -1,6 +1,8 @@
 #ifndef HISTORY_HPP
 #define HISTORY_HPP
-#include<string>
+#include <stdlib.h>
+#include <iostream>
+#include <string>
 #include"../Movement/Movement.hpp"
 
 using namespace std;
@@ -8,13 +10,17 @@ using namespace std;
 class History
 {
     private:
-        Movement movimientos[0];
+        int nElement;
+        Movement movimients[10];
 
     public:
-    History();
-    void add(Movement movimiento); 
-    int getMovement(int position);
-    void toDeploy(); 
+        History();
+        void add(Movement movimiento); 
+        Movement getMovement(int position);
+        void toDeploy(); 
+        Movement* getMovements();
 
+        void setNElement(int nElementos);
+        int getNElement();
 };
 #endif

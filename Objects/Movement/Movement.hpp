@@ -10,16 +10,22 @@ class Movement
     private:
         string accountNumber;
         string date;
-        Client cliente;
+        Client client;
+        string move;
+        float cant;
     public:
         Movement();
-        Movement(string numeroCuenta, string fecha, Client cliente);
+        Movement(string numeroCuenta, string fecha, Client cliente, string movimiento, float cantidad);
 
         string getAccountNumber();
         string getDate();
-        Client getCliente();
+        Client getClient();
+        string getMove();
+        float getCant();
         void setAccountNumber(string numeroCuenta);
         void setDate(string fecha);
-        void setCliente(Client cliente);
+        void setClient(Client cliente);
+        void setMove(string movimiento);
+        void setCant(float cantidad);
 };
 #endif

@@ -8,6 +8,9 @@
 #include "../AccountAccess/AccountAccess.hpp"
 #include "../History/History.hpp"
 #include "../Movement/Movement.hpp"
+#include "../Deposit/Deposit.hpp"
+#include "../Withdrawal/Withdrawal.hpp"
+
 
 using namespace std;
 
@@ -29,10 +32,10 @@ class SystemBank
 
         bool validateClient(AccountAccess newAccess);
         // retiro De Efectivo
-        void cashWithdrawal();
+        float cashWithdrawal(AccountDebit accountDebit, Withdrawal withdrawal);
 
         // deposito En Efectivo 
-        void cashDeposit();
+        float cashDeposit(AccountDebit accountDebit, Deposit deposit);
 
         //consulta De Saldo
         void balanceInquiry();
